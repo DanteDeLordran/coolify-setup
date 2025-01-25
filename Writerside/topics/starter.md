@@ -15,4 +15,13 @@ any issue, they are also very affordable and offer very good specs for the price
 
 ## Connect to VPS and update
 
-Once you have acquired a device of your choice now is time to connect to the device via SSH or any other way
+Once you have acquired a device of your choice now is time to connect to the device via SSH or any other way,
+in Netcup you can use the integrated terminal, but is awful as fuck, I recommend ssh
+
+```Bash
+sudo pacman -S openssh # In my case, I use Arch
+ssh root@<your-server-ip>
+```
+You will then be prompted to type 'yes' for the connection
+
+Then you will be asked to type your root user password

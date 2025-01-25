@@ -1,6 +1,6 @@
-FROM jetbrains/writerside-builder:243.21565 AS build
+FROM jetbrains/writerside-builder:243.22562 as build
 
-ARG INSTANCE=Writerside/lh
+ARG INSTANCE=Writerside/cs
 
 RUN mkdir /opt/sources
 
@@ -14,8 +14,8 @@ Xvfb :99 & \
 
 WORKDIR /opt/wrs-output
 
-RUN unzip -O UTF-8 webHelpLH2-all.zip -d /opt/wrs-output/unzipped-artifact
+RUN unzip -O UTF-8 webHelpCS2-all.zip -d /opt/wrs-output/unzipped-artifact
 
-FROM httpd:2.4 AS http-server
+FROM httpd:alpine3.21 as http-server
 
 COPY --from=build /opt/wrs-output/unzipped-artifact/ /usr/local/apache2/htdocs/
