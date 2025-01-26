@@ -5,23 +5,7 @@ In this manual I am going to explain step by step how to set up and configure a 
 Note: This guide is for non-sysadmins/linux experts. If you have already expertise in the area, maybe
 Kubernetes or vanilla Traefik would make the job for you.
 
-## Get a VPS
+## Coolify minimum requirements
 
-The first step is to get a VPS or some device in which you can have a static ip address, it can be a
-homemade server or even a raspberry pi.
+Coolify needs at least 2Gb RAM and 2vCPU (I'm writing this for Coolify version 4.0.0-beta.388)
 
-I personally recommend Netcup since I've been using their Root Servers for a while now and so far I haven't had
-any issue, they are also very affordable and offer very good specs for the price.
-
-## Connect to VPS and update
-
-Once you have acquired a device of your choice now is time to connect to the device via SSH or any other way,
-in Netcup you can use the integrated terminal, but is awful as fuck, I recommend ssh
-
-```Bash
-sudo pacman -S openssh # In my case, I use Arch
-ssh root@<your-server-ip>
-```
-You will then be prompted to type 'yes' for the connection
-
-Then you will be asked to type your root user password
