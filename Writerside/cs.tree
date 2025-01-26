@@ -6,5 +6,12 @@
                  name="Coolify Setup"
                  start-page="starter.md">
 
-    <toc-element topic="starter.md"/>
+    <toc-element topic="starter.md">
+        <toc-element topic="1-Getting-a-VPS.md"/>
+        <toc-element topic="2-Configure-firewall.md"/>
+        <toc-element topic="3-Setup-Coolify.md"/>
+        <toc-element topic="4-Configure-Docker-firewall-bypass.md"/>
+    </toc-element>
+    <toc-element topic="Enable-sentinel-metrics.md"/>
+    <toc-element topic="Setting-up-a-container-registry.md"/>
 </instance-profile>
