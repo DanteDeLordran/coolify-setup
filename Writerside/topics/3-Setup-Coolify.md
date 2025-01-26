@@ -24,3 +24,12 @@ log in as a Coolify admin
 NOTE: Since we haven't set up a domain for the instance, we are still on http, not https, so the password you type will
 not be encrypted yet, so I personally recommend to use a placeholder password for now
 
+## Get a domain
+
+## Configure domain for our instance
+
+## Accessing our instance from the domain
+
+## Changing our temporal password
+
+## Closing ports on firewall
